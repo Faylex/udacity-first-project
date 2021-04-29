@@ -1,31 +1,64 @@
+body, ul, li, p {
+    margin:0px;
+    padding: 0px;
+    list-style: none;
+}
+
+/* padronização dos links */
+a {
+    text-decoration: none;
+    color: cornsilk;
+}
 
 .container{
     display: grid;
-    grid-template-columns: 1fr;
-    /* grid-template-rows: 250px 600px; */
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 10vh 70vh 10vh;
+    gap: 10px;
     grid-template-areas: 
-    "hd"
-    "bd"
-    "ft";
-    z-index: 2;
-    border: 2px solid yellow;
+    "h h"
+    "m m"
+    "f f";
+    
 }
 
-.box {
+.header {
     display: flex;
-    flex-direction: center;
-    justify-content:space-between;
-    margin-top: 2%;
+    /* flex wrap usado para sempre manter a dimenção simétrica idependente do tamanho do navegador */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: chocolate;
+    align-items: center;
+    padding: 20px;
 }
 
 .header{
-    grid-area: hd;
+    grid-area: h;
 }
 
-.main{
-    grid-area: bd;
+.main {
+    background: rgb(124, 122, 122);
+    display: grid;
+    grid-area: m;
 }
 
-.footer{
-    grid-area: ft;
+footer {
+    display: flex;
+    /* flex wrap usado para sempre manter a dimenção simétrica idependente do tamanho do navegador */
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background: chocolate;
+    align-items: center;
+    padding: 10px;
+    grid-area: f;
+}
+
+.footer-menu{
+    display: flex;
+    padding: 10px;
+
+}
+.footer-menu, li{
+    margin-left: 15px;
+
 }
