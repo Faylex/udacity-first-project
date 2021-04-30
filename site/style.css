@@ -17,7 +17,7 @@ a {
     gap: 10px;
     grid-template-areas: 
     "h h"
-    "m m"
+    "m a"
     "f f";
     
 }
@@ -40,6 +40,13 @@ a {
     background: rgb(124, 122, 122);
     display: grid;
     grid-area: m;
+}
+
+.aside {
+    display: flex;
+    background: chocolate;
+    grid-area: a;
+    align-items: flex-start;
 }
 
 footer {
