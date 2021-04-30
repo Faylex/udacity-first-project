@@ -1,13 +1,16 @@
+
 body, ul, li, p {
     margin:0px;
     padding: 0px;
     list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* padronização dos links */
 a {
     text-decoration: none;
     color: cornsilk;
+    font-style: italic;
 }
 
 .container{
@@ -27,7 +30,7 @@ a {
     /* flex wrap usado para sempre manter a dimenção simétrica idependente do tamanho do navegador */
     flex-wrap: wrap;
     justify-content: space-between;
-    background: chocolate;
+    background: rgb(248, 122, 32);
     align-items: center;
     padding: 20px;
 }
@@ -37,16 +40,22 @@ a {
 }
 
 .main {
-    background: rgb(124, 122, 122);
-    display: grid;
+    display: flex;
+    flex: 2;
+    background: rgb(241, 233, 224);
+    border-block-start-style: double;
+    border-top-color: black;
+    padding-left: 20px;
     grid-area: m;
 }
 
 .aside {
     display: flex;
-    background: chocolate;
+    padding: 20px;
+    border-block-start-style: double;
+    border-top-color: black;
+    background: rgb(247, 232, 211);
     grid-area: a;
-    align-items: flex-start;
 }
 
 footer {
@@ -54,9 +63,9 @@ footer {
     /* flex wrap usado para sempre manter a dimenção simétrica idependente do tamanho do navegador */
     flex-wrap: wrap;
     justify-content: flex-end;
-    background: chocolate;
+    background: rgb(248, 122, 32);
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     grid-area: f;
 }
 
@@ -65,7 +74,8 @@ footer {
     padding: 10px;
 
 }
-.footer-menu, li{
+
+.footer-menu, li {
     margin-left: 15px;
 
 }
