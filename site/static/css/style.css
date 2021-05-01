@@ -16,7 +16,6 @@ a {
 .container{
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 10vh 70vh 10vh;
     gap: 10px;
     grid-template-areas: 
     "h h"
@@ -30,7 +29,7 @@ a {
     /* flex wrap usado para sempre manter a dimenção simétrica idependente do tamanho do navegador */
     flex-wrap: wrap;
     justify-content: space-between;
-    background: rgb(248, 122, 32);
+    background: black;
     align-items: center;
     padding: 20px;
 }
@@ -39,14 +38,31 @@ a {
     grid-area: h;
 }
 
+.title{
+    text-align: left;
+}
+
 .main {
     display: flex;
-    flex: 2;
     background: rgb(241, 233, 224);
     border-block-start-style: double;
-    border-top-color: black;
+    border-top-color: rgb(248, 122, 32);
     padding-left: 20px;
     grid-area: m;
+}
+
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    flex-wrap: wrap;
+}
+
+.grid-post img {
+    width: 400px;
+    height: 300px;
+    display: block;
 }
 
 .aside {
