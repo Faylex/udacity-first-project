@@ -1,0 +1,26 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    "h h h h"
+    "a m m m"
+    "f f f f";
+    gap: 10px;
+}
+
+
+header {
+    grid-area: h;
+}
+
+main {
+    grid-area: m;
+}
+
+aside {
+    grid-area: a;
+}
+
+footer {
+    grid-area: f;
+}
