@@ -10,7 +10,8 @@ ul li p h1 {
     color: rgb(255, 123, 0);
     text-align: left;
     display: block;
-    max-block-size: 50vh;
+    width: 100%;
+    max-width: 720px;
     margin-left: 10px;
     padding: 10px;
     background-color: rgb(247, 215, 185);

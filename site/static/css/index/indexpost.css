@@ -27,9 +27,8 @@
     border-top: 10px;
 }
 .post img {
-    width: 500px;
-    height: 300px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 720px;
     display: block;
     border-top: double;
     border-color: rgb(255, 123, 0);
